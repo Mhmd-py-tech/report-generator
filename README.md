@@ -2,6 +2,8 @@
 
 Generates professional HTML dashboards from sales data.
 
+## 🔗 [View Live Dashboard Demo](https://mhmd-py-tech.github.io/report-generator/report.html)
+
 ## What It Does
 - Reads CSV sales data
 - Calculates summary statistics (totals, averages)
