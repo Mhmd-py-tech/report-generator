@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Analytics Dashboard</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: #eef2f7; 
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 { color: #2d3436; margin-bottom: 40px; font-weight: 800; }
+        .dashboard { display: flex; gap: 25px; margin-bottom: 50px; width: 100%; max-width: 900px; }
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            flex: 1;
+            text-align: center;
+            border: 1px solid #dcdde1;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        .card h3 { margin: 0; font-size: 12px; color: #636e72; text-transform: uppercase; }
+        .card p { margin: 15px 0 0; font-size: 28px; font-weight: 900; color: #2f3640; }
+        table {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #dcdde1;
+        }
+        th { background-color: #2f3640; color: white; padding: 18px; text-align: left; }
+        td { padding: 16px 18px; border-bottom: 1px solid #f1f2f6; transition: 0.2s; }
+        tr:hover td { background-color: #f5f6fa; color: #3498db; }
+    </style>
+</head>
+<body>
+    <h1>📊 Sales Analytics</h1>
+    <div class="dashboard">
+        <div class="card"><h3>Total Revenue</h3><p>$249,000</p></div>
+        <div class="card"><h3>Monthly Avg</h3><p>$49,800</p></div>
+        <div class="card"><h3>Customers</h3><p>145</p></div>
+        <div class="card"><h3>Deals</h3><p>72</p></div>
+    </div>
+    <table>
+        <thead><tr><th>MONTH</th><th>REVENUE</th><th>CUSTOMERS</th><th>DEALS</th></tr></thead>
+        <tbody>
+            
+        <tr>
+            <td>January</td>
+            <td style="font-weight: bold;">$45,000</td>
+            <td>23</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td style="font-weight: bold;">$52,000</td>
+            <td>31</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td style="font-weight: bold;">$48,000</td>
+            <td>27</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td style="font-weight: bold;">$55,000</td>
+            <td>35</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td style="font-weight: bold;">$49,000</td>
+            <td>29</td>
+            <td>13</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
